@@ -1,2 +1,3 @@
-# image_analysis_STK_tmpl
-STK image analysis template
+## Image_analysis_STK_template
+
+STK image analysis template.

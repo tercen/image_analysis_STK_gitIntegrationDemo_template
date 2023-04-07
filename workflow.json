@@ -1,23 +1,23 @@
 {
   "kind": "Workflow",
-  "id": "07bd3af45f259674834661ea5f3d46d6",
+  "id": "5fdacf2e254f508d0bd669ac03b588d3",
   "isDeleted": false,
-  "rev": "5-d99df3bf5e09426e2d413704dce9b780",
+  "rev": "10-bb241204a26f1d7d955090bd2fff1c81",
   "description": "image analysis STK",
   "name": "image_analysis_STK",
-  "createdBy": "ginberg",
+  "createdBy": "dschuller",
   "acl": {
     "kind": "Acl",
-    "owner": "pamgene",
+    "owner": "Test_NewTemplates",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-03-23T08:28:57.786261Z"
+    "value": "2023-03-10T12:44:55.678185Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-03-24T12:35:40.189478Z"
+    "value": "2023-04-07T14:29:30.634286Z"
   },
   "urls": [
     {
@@ -34,8 +34,18 @@
     },
     {
       "kind": "Pair",
-      "key": "workflow.template",
-      "value": ""
+      "key": "_upgrade_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_reset_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_old_task_",
+      "value": "0.10.15"
     }
   ],
   "url": {
@@ -45,7 +55,7 @@
   "version": "0.0.5",
   "authors": [],
   "isPublic": false,
-  "projectId": "ba516d78a1a52fff3d5ade71588d64f8",
+  "projectId": "5fdacf2e254f508d0bd669ac039fb28b",
   "folderId": "",
   "links": [
     {
@@ -298,13 +308,13 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "PS12 images",
-            "version": "1.0.0",
-            "operatorId": "c845ceade32c4423bc616ff5ab238feb",
+            "version": "1.2.2",
+            "operatorId": "5e029e4d1e70a9936d37296888ef9037",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/ps12image_operator"
+              "uri": "https://github.com/pamgene/ps12image_operator"
             }
           },
           "environment": []
@@ -343,7 +353,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "4cc05977-02c5-489b-84ab-ce9aa13ae6da"
+        "id": "1849912c-1c5f-41e0-830e-7621cce0f846"
       }
     },
     {
@@ -377,7 +387,7 @@
         "topLeft": {
           "kind": "Point",
           "x": 976.5548046875001,
-          "y": 408.5
+          "y": 407.5
         }
       },
       "state": {
@@ -596,7 +606,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 60
         },
         "filters": {
           "kind": "Filters",
@@ -628,8 +638,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "pamsoft_grid_operator",
-            "version": "1.0.48",
-            "operatorId": "c845ceade32c4423bc616ff5ab239827",
+            "version": "1.3.4",
+            "operatorId": "0e19b61311c69fe34f479b830b50db2a",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -680,19 +690,34 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/pamsoft_grid_operator"
+              "uri": "https://github.com/pamgene/pamsoft_grid_operator"
             }
           },
           "environment": [
             {
               "kind": "Pair",
               "key": "cpu",
-              "value": "20"
+              "value": "36"
             },
             {
               "kind": "Pair",
               "key": "ram",
+              "value": "20000000000"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
               "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
             }
           ]
         },
@@ -730,7 +755,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "8e233da7-02c0-4b6d-9673-0fad5995e918"
+        "id": "12349e79-e782-4aab-9f13-058c4614e1d9"
       }
     },
     {
@@ -944,7 +969,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 122.47956848144531,
+          "x": 122.47987365722656,
           "y": 55.0
         },
         "topLeft": {
@@ -1205,7 +1230,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 9120
         },
         "filters": {
           "kind": "Filters",
@@ -1237,8 +1262,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "pamsoft_grid_qt_operator",
-            "version": "1.0.48",
-            "operatorId": "c845ceade32c4423bc616ff5ab23b332",
+            "version": "1.3.5",
+            "operatorId": "0e19b61311c69fe34f479b830b44f13c",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -1289,19 +1314,34 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/pamsoft_grid_qt_operator"
+              "uri": "https://github.com/pamgene/pamsoft_grid_qt_operator"
             }
           },
           "environment": [
             {
               "kind": "Pair",
               "key": "cpu",
-              "value": "20"
+              "value": "36"
             },
             {
               "kind": "Pair",
               "key": "ram",
+              "value": "20000000000"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
               "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
             }
           ]
         },
@@ -1333,20 +1373,20 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 9
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "92ad457f-8059-40b5-a7a7-8696051ebdf2"
+        "id": "9d46c15e-c4e4-4957-9ed7-667def03ac2e"
       }
     },
     {
       "kind": "TableStep",
       "id": "f389f943-837a-499b-a209-7b5e597e84f9",
       "groupId": "",
-      "name": "Evolve Folder zip",
+      "name": "STK Ev3 710263311_710263312_710263314-on 1300STKlysv11-run 210621120218.zip",
       "inputs": [],
       "outputs": [
         {
@@ -1360,13 +1400,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 118.51763916015625,
+          "x": 511.9034423828125,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 959.5050000000001,
-          "y": 229.5
+          "x": 833.5050000000001,
+          "y": 233.5
         }
       },
       "state": {
@@ -1380,7 +1420,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "26d5446c-0d30-43d7-baee-b967bc92a1ae",
+          "id": "7aea91a4-72cf-4e80-be0e-261a05987f4d",
           "relations": []
         }
       }
@@ -1703,13 +1743,13 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Pamsoft Grid Shiny Operator",
-            "version": "1.0.24",
-            "operatorId": "c845ceade32c4423bc616ff5ab6fc5fb",
+            "version": "1.2.1",
+            "operatorId": "5fdacf2e254f508d0bd669ac03e6c115",
             "operatorKind": "ShinyOperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
-                "name": "Min Diameter",
+                "name": "Min Diamete",
                 "value": "0.45"
               },
               {
@@ -1755,7 +1795,7 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/pamsoft_grid_shiny_operator"
+              "uri": "https://github.com/pamgene/pamsoft_grid_shiny_operator"
             }
           },
           "environment": [
@@ -1767,7 +1807,22 @@
             {
               "kind": "Pair",
               "key": "ram",
+              "value": "1000000000"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
               "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
             }
           ]
         },
@@ -1805,7 +1860,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a31049ed-e680-4fb3-8da2-553ab285b920"
+        "id": "cd595bf7-479d-44fa-9268-a57a15f20d38"
       }
     },
     {
@@ -1833,7 +1888,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 101.92768859863281,
+          "x": 101.9278564453125,
           "y": 55.0
         },
         "topLeft": {
@@ -1979,8 +2034,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 983.8291403198245,
-          "y": 868.5
+          "x": 982.8291403198245,
+          "y": 867.5
         }
       },
       "state": {
@@ -2380,13 +2435,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9094
+          "nRows": 9093
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "95919ef7-4796-4f41-acf1-7d91daefaa2d"
+        "id": "cfa85f75-9265-41c0-a55f-70ce5efabca5"
       }
     },
     {
@@ -2452,7 +2507,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 112.16165161132812,
+          "x": 112.16188049316406,
           "y": 55.0
         },
         "topLeft": {
@@ -2621,16 +2676,42 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "PS12 Image Overview Shiny Operator",
-            "version": "0.0.7",
-            "operatorId": "07bd3af45f259674834661ea5fedc7bd",
+            "version": "0.1.0",
+            "operatorId": "e50efaa75416f1b61950d47b86dc9b29",
             "operatorKind": "ShinyOperator",
             "propertyValues": [],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/ps12image_overview_shiny_operator"
+              "uri": "https://github.com/pamgene/ps12image_overview_shiny_operator"
             }
           },
-          "environment": []
+          "environment": [
+            {
+              "kind": "Pair",
+              "key": "cpu",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "ram",
+              "value": "1000000000"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
+            }
+          ]
         },
         "rowTable": {
           "kind": "CrosstabTable",
@@ -2666,13 +2747,13 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "d9aa79e1-3e00-4d79-99e8-589a2e7757f4"
+        "id": "ca0d0f8c-dc5d-49e0-b342-21f518b7f571"
       }
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": -485.0,
-    "y": -221.0
+    "x": -380.0,
+    "y": -171.0
   }
 }
