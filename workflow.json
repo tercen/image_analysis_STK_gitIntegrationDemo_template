@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "5fdacf2e254f508d0bd669ac03b588d3",
   "isDeleted": false,
-  "rev": "37-071592e0de0d6023a2540b6a05a9d265",
+  "rev": "39-cf66a935a585e2b636b2813a7790543c",
   "description": "image analysis STK",
   "name": "image_analysis_STK",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-06-07T12:31:56.168413Z"
+    "value": "2023-06-20T11:23:56.689782Z"
   },
   "urls": [
     {
@@ -371,7 +371,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "811f5d89-5d89-4096-8b29-8ba796c7c5dd"
+        "id": "c3c26342-70d8-48d9-9b20-b3f6f91a2531"
       },
       "parentDataStepId": ""
     },
@@ -626,7 +626,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 60
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -778,7 +778,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "dba80a52-1440-492d-acf3-7ad88a027f3e"
+        "id": "a5be71a1-ffc1-4408-802e-7fa20df0a501"
       },
       "parentDataStepId": ""
     },
@@ -1255,7 +1255,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9120
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1287,8 +1287,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "pamsoft_grid_qt_operator",
-            "version": "1.3.5",
-            "operatorId": "0e19b61311c69fe34f479b830b44f13c",
+            "version": "1.3.8",
+            "operatorId": "164f4cf9ebe56cb1bc5e859e58411eed",
             "operatorKind": "DockerOperator",
             "propertyValues": [
               {
@@ -1401,13 +1401,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 1
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "af5a245f-98fe-4d20-9198-8b6c6ba140ae"
+        "id": "1232bad3-931b-4a58-86fc-a15d1542a310"
       },
       "parentDataStepId": ""
     },
@@ -1449,7 +1449,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "cd6ceeee-d9bd-4494-9e31-b18326304b77",
+          "id": "cc10ffa0-3f09-46c9-827c-ba8a7d5927bb",
           "relations": []
         }
       }
@@ -1893,7 +1893,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "32265e85-2f22-4159-b6e7-d0faf95ff73e"
+        "id": "f84dab95-8906-4182-aa3d-cb9272820cee"
       },
       "parentDataStepId": ""
     },
@@ -2479,7 +2479,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "049741ba-3adf-4a51-ab60-8eb3720b34c4"
+        "id": "4ee36d6a-3b3e-4ace-8697-0e59048f6736"
       },
       "parentDataStepId": ""
     },
@@ -2790,14 +2790,14 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "7ffc95a7-f198-42e9-8e73-c5ff063d48d2"
+        "id": "d6d25e9a-bc11-4342-8ef5-899b41780557"
       },
       "parentDataStepId": ""
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": -527.0,
-    "y": -12.0
+    "x": -412.0,
+    "y": -87.0
   }
 }
