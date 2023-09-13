@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "8363045522f1caa2268138b6ba92d8a4",
   "isDeleted": false,
-  "rev": "4-d54ed90f0be67e0201a007d19fde060a",
+  "rev": "8-42b18acfd2442b9133d0e856eeeb6525",
   "description": "image analysis STK",
   "name": "image_analysis_STK_template",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-09-13T07:09:40.879094Z"
+    "value": "2023-09-13T09:39:12.421380Z"
   },
   "urls": [
     {
@@ -52,7 +52,7 @@
     "kind": "Url",
     "uri": "https://github.com/pamgene/image_analysis_STK_template"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "authors": [],
   "isPublic": false,
   "projectId": "5fdacf2e254f508d0bd669ac039fb28b",
@@ -389,7 +389,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "526f1355-49a9-411c-adce-2c22720a5f96"
+        "id": "8d9c7545-9c40-49f7-8daf-6a3f53f85060"
       },
       "parentDataStepId": ""
     },
@@ -796,7 +796,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c615c868-d19c-4c54-8764-511310ca1e8b"
+        "id": "1ba4cebb-4007-476e-ac17-c76568312cdc"
       },
       "parentDataStepId": ""
     },
@@ -1016,8 +1016,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 966.0842187500002,
-          "y": 776.5
+          "x": 967.0842187500002,
+          "y": 775.5
         }
       },
       "state": {
@@ -1273,7 +1273,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 18240
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1419,13 +1419,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 9
+          "nRows": 1
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "71a48f54-7567-422b-a86f-45c12eb31370"
+        "id": "fda0d0ea-fdcd-49e0-bb85-3faf4e729f83"
       },
       "parentDataStepId": ""
     },
@@ -1433,7 +1433,7 @@
       "kind": "TableStep",
       "id": "f389f943-837a-499b-a209-7b5e597e84f9",
       "groupId": "",
-      "name": "STK_6chips.zip",
+      "name": "710415415_710415416_710415419-on 1300STKlysv11-run 221028125720.zip",
       "inputs": [],
       "outputs": [
         {
@@ -1447,7 +1447,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 108.493896484375,
+          "x": 462.76348876953125,
           "y": 55.0
         },
         "topLeft": {
@@ -1460,15 +1460,44 @@
         "kind": "StepState",
         "taskId": "",
         "taskState": {
-          "kind": "InitState"
+          "kind": "DoneState"
         }
       },
       "model": {
         "kind": "TableStepModel",
         "relation": {
-          "kind": "UnionRelation",
-          "id": "512e53a5-568e-4e04-bc2e-24363ab89f32",
-          "relations": []
+          "kind": "InMemoryRelation",
+          "id": "03b4e239-9b0b-4c4c-8035-11f266b26cdd",
+          "inMemoryTable": {
+            "kind": "Table",
+            "nRows": 1,
+            "properties": {
+              "kind": "TableProperties",
+              "name": "",
+              "sortOrder": [],
+              "ascending": true
+            },
+            "columns": [
+              {
+                "kind": "Column",
+                "id": "documentId",
+                "name": "documentId",
+                "type": "string",
+                "nRows": 1,
+                "size": -1,
+                "metaData": {
+                  "kind": "ColumnSchemaMetaData",
+                  "sort": [],
+                  "ascending": true,
+                  "quartiles": [],
+                  "properties": []
+                },
+                "values": [
+                  "e0425f23e68966cc4df9df9bf602b80b"
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -1911,7 +1940,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a7e11edc-96cc-4eb2-abd9-c49028291bdb"
+        "id": "2b94fa70-3422-4e67-8415-c3e81fd9daf6"
       },
       "parentDataStepId": ""
     },
@@ -2560,7 +2589,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "cbc07191-c9b5-4b99-9076-d23873fadb68"
+        "id": "fd97c62d-5af9-4beb-ab59-a257db10c7f7"
       },
       "parentDataStepId": ""
     },
@@ -3251,7 +3280,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -296.0,
-    "y": -86.0
+    "x": -352.0,
+    "y": -158.0
   }
 }
