@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "8363045522f1caa2268138b6ba92d8a4",
   "isDeleted": false,
-  "rev": "8-42b18acfd2442b9133d0e856eeeb6525",
+  "rev": "18-2090845f1a5d0266b8b87498b830f259",
   "description": "image analysis STK",
   "name": "image_analysis_STK_template",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-09-13T09:39:12.421380Z"
+    "value": "2023-09-19T10:17:56.458330Z"
   },
   "urls": [
     {
@@ -52,7 +52,7 @@
     "kind": "Url",
     "uri": "https://github.com/pamgene/image_analysis_STK_template"
   },
-  "version": "0.1.3",
+  "version": "0.1.0",
   "authors": [],
   "isPublic": false,
   "projectId": "5fdacf2e254f508d0bd669ac039fb28b",
@@ -389,7 +389,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "8d9c7545-9c40-49f7-8daf-6a3f53f85060"
+        "id": "fb33700f-0ef0-42e6-98c5-2232c422ef9e"
       },
       "parentDataStepId": ""
     },
@@ -796,7 +796,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "1ba4cebb-4007-476e-ac17-c76568312cdc"
+        "id": "41fee50c-31e7-494e-8bad-f29ff92f2bfe"
       },
       "parentDataStepId": ""
     },
@@ -1425,7 +1425,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "fda0d0ea-fdcd-49e0-bb85-3faf4e729f83"
+        "id": "068ce481-b840-4545-acf3-f99b345fb35e"
       },
       "parentDataStepId": ""
     },
@@ -1452,52 +1452,23 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 1035.505,
-          "y": 235.5
+          "x": 865.5050000000001,
+          "y": 234.5
         }
       },
       "state": {
         "kind": "StepState",
         "taskId": "",
         "taskState": {
-          "kind": "DoneState"
+          "kind": "InitState"
         }
       },
       "model": {
         "kind": "TableStepModel",
         "relation": {
-          "kind": "InMemoryRelation",
-          "id": "03b4e239-9b0b-4c4c-8035-11f266b26cdd",
-          "inMemoryTable": {
-            "kind": "Table",
-            "nRows": 1,
-            "properties": {
-              "kind": "TableProperties",
-              "name": "",
-              "sortOrder": [],
-              "ascending": true
-            },
-            "columns": [
-              {
-                "kind": "Column",
-                "id": "documentId",
-                "name": "documentId",
-                "type": "string",
-                "nRows": 1,
-                "size": -1,
-                "metaData": {
-                  "kind": "ColumnSchemaMetaData",
-                  "sort": [],
-                  "ascending": true,
-                  "quartiles": [],
-                  "properties": []
-                },
-                "values": [
-                  "e0425f23e68966cc4df9df9bf602b80b"
-                ]
-              }
-            ]
-          }
+          "kind": "UnionRelation",
+          "id": "90b962d3-0e51-4afd-8be9-8a077001ad49",
+          "relations": []
         }
       }
     },
@@ -1788,7 +1759,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 18240
+          "nRows": 9120
         },
         "filters": {
           "kind": "Filters",
@@ -1940,7 +1911,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "2b94fa70-3422-4e67-8415-c3e81fd9daf6"
+        "id": "79ecb63a-be4b-4144-9d4f-093ba5e31aff"
       },
       "parentDataStepId": ""
     },
@@ -2327,7 +2298,7 @@
         "rowTable": {
           "kind": "CrosstabTable",
           "cellSize": 21.6,
-          "offset": 0,
+          "offset": 112,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
@@ -2589,7 +2560,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "fd97c62d-5af9-4beb-ab59-a257db10c7f7"
+        "id": "ff6affeb-946d-4c3e-bbd0-e9e498993112"
       },
       "parentDataStepId": ""
     },
@@ -2826,8 +2797,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "PS12 Image Overview Shiny Operator",
-            "version": "0.2.0",
-            "operatorId": "a9cd3a4bedccc84127966ac725dfd365",
+            "version": "0.2.1",
+            "operatorId": "ba3163d67612e4be851fad4561b33d4b",
             "operatorKind": "ShinyOperator",
             "propertyValues": [],
             "url": {
@@ -2900,7 +2871,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "88e08cb9-2773-49a0-9ec6-5d3286e29969"
+        "id": "be4cf374-892b-4fa7-8243-ec2ec242c5e6"
       },
       "parentDataStepId": ""
     },
@@ -3174,8 +3145,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 1171.505,
-          "y": 778.5
+          "x": 1186.505,
+          "y": 776.5
         }
       },
       "state": {
@@ -3189,7 +3160,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "RenameRelation",
-          "id": "rename_190af6bfd3f5f3d3be62e80fe9be0281",
+          "id": "rename_8363045522f1caa2268138b6ba92d3d1",
           "relation": {
             "kind": "SimpleRelation",
             "id": "8363045522f1caa2268138b6ba92d3d1",
@@ -3280,7 +3251,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -352.0,
-    "y": -158.0
+    "x": -500.0,
+    "y": -422.0
   }
 }
