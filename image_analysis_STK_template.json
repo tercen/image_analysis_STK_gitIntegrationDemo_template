@@ -24,7 +24,9 @@
    "uri": "https://github.com/pamgene/image_analysis_STK_template"
   }
  ],
- "tags": [],
+ "tags": [
+  "blacklist"
+ ],
  "meta": [
   {
    "kind": "Pair",
@@ -334,7 +336,7 @@
       "kind": "OperatorRef",
       "name": "PS12 images",
       "version": "1.2.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1718,7 +1720,7 @@
       "kind": "OperatorRef",
       "name": "Pamsoft Grid Shiny Operator",
       "version": "1.2.1",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ShinyOperator",
       "propertyValues": [
        {
